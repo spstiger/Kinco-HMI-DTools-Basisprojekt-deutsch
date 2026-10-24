@@ -25,7 +25,7 @@ So sieht es auf einem echten M2070HE aus, mit RAM- und Flash-Werten des Geräts:
 | **M2070HE** | 1024 × 600 | 128 MB / 256 MB | 4.5 | [`M2070HE_DTools4.5`](M2070HE_DTools4.5) |
 | **M2100E** | 1024 × 600 | 128 MB / 256 MB | 4.4 | [`M2100E_DTools4.4`](M2100E_DTools4.4) |
 | **G100E2-WiFi-PR01** | 1024 × 600 | 256 MB / 256 MB | 4.4 | [`G100E2-WiFi-PR01_DTools4.4`](G100E2-WiFi-PR01_DTools4.4) |
-| **M2043HE** | 800 × 480 | 128 MB / 256 MB | 4.4 | [`M2043HE_DTools4.4`](M2043HE_DTools4.4) |
+| **M2043HE** | 800 × 480 | 128 MB / 256 MB | 4.4 | [`M2043HE_DTools4.4`](M2043HE_DTools4.4) – Einstellungen auf zwei Seiten |
 | **MK070E** | 800 × 480 | 64 MB / 128 MB | 4.4 | [`MK070E_DTools4.4`](MK070E_DTools4.4) – mit integrierter SPS |
 | **GL043E** | 480 × 272 | 128 MB / 128 MB | 4.4 | [`GL043E_DTools4.4`](GL043E_DTools4.4) – Einstellungen auf zwei Seiten |
 | **GT2156E** | 1920 × 1080 | 512 MB / 4 GB | 4.4 | [`GT2156E_DTools4.4`](GT2156E_DTools4.4) |
@@ -35,9 +35,13 @@ Gestaltet ist alles für 1024 × 600. Auf anderen Displays ist die Oberfläche a
 | Auflösung | Bilder | Komponenten | Systemfenster |
 |---|---|---|---|
 | 1024 × 600 | 1 | L | 1 |
-| 800 × 480 | 0,75 | M | 1 |
-| 480 × 272 | 0,5 | S | 0,6 |
+| 800 × 480 (7 Zoll, MK070E) | 0,75 | M | 1 |
+| 800 × 480 (4,3 Zoll, M2043HE) | 0,83 | M | 1 |
+| 480 × 272 (4,3 Zoll, GL043E) | 0,5 | S | 0,6 |
 | 1920 × 1080 | 1,75 | XL | 1,75 |
+
+Auf den 4,3-Zoll-Geräten GL043E und M2043HE sind Tasten und Schrift so groß, dass man sie mit dem Finger
+gut trifft. Dafür stehen die Einstellungen dort auf zwei Seiten.
 
 Ein Projekt für 4.4 lässt sich auch in DTools 4.5 öffnen: DTools fragt, ob es konvertiert werden soll.
 Danach öffnet es sich nicht mehr in 4.4.
@@ -59,7 +63,7 @@ Danach öffnet es sich nicht mehr in 4.4.
 
 RAM, Flash und Helligkeit stammen aus den
 [kostenlosen spstiger-Komponenten](https://github.com/spstiger/Kinco-HMI-DTools-free-spstiger-components)
-(ab Version 2.1). Beim GL043E ist die Seite zweigeteilt: RAM, Flash und Helligkeit auf Bild 10
+(ab Version 2.1). Bei GL043E und M2043HE ist die Seite zweigeteilt: RAM, Flash und Helligkeit auf Bild 10
 „Einstellungen 1/2“, Sprache, Systemmeldung und System auf Bild 11 „Einstellungen 2/2“.
 
 **Systemfenster** – Zifferntastatur, Hex- und Texttastatur (QWERTZ), Anmeldung mit Benutzerauswahl
@@ -102,7 +106,7 @@ wie Enter, CLR oder ABC sind in allen Sprachen gleich und bleiben feste Texte.
 - **Gerät:** Für ein anderes Kinco-HMI das Projekt mit derselben Auflösung nehmen und den HMI-Typ in
   DTools umstellen. Speicheranzeigen passend zur RAM-/Flash-Größe des Geräts aus der
   Komponenten-Bibliothek neu einfügen.
-- **Eigene Bilder** ab Nummer 100 anlegen. 0 und 10 (GL043E auch 11) sind die Vorlage, 40 die
+- **Eigene Bilder** ab Nummer 100 anlegen. 0 und 10 (GL043E und M2043HE auch 11) sind die Vorlage, 40 die
   Systemmeldung, 1–9, 32766 und 32767 die Systemfenster.
 - **Eigene Register** nicht ab LB/LW 8900 anlegen – dieser Bereich ist für Systemregister reserviert.
   Die Vorlage selbst nutzt LW8110 (Testwert).
