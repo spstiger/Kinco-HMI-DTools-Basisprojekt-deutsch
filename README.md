@@ -9,8 +9,8 @@ Deutsch/Englisch. Projekt öffnen, eigene Bilder ab Nummer 100 anlegen, loslegen
 
 ![Startseite des Basisprojekts](docs/bilder/start_de.png)
 
-| Einstellungen (Englisch) | Zifferntastatur |
-|---|---|
+| Einstellungen (Englisch)                                            | Zifferntastatur                                                    |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | ![Einstellungsseite auf Englisch](docs/bilder/einstellungen_en.png) | ![Zifferntastatur im spstiger-Design](docs/bilder/tastatur_de.png) |
 
 So sieht es auf einem echten M2070HE aus, mit RAM- und Flash-Werten des Geräts:
@@ -19,28 +19,28 @@ So sieht es auf einem echten M2070HE aus, mit RAM- und Flash-Werten des Geräts:
 
 ## Projekte
 
-| Gerät | Auflösung | RAM / Flash | DTools | Ordner |
-|---|---|---|---|---|
-| **M2070HE** | 1024 × 600 | 128 MB / 256 MB | 4.4 | [`M2070HE_DTools4.4`](M2070HE_DTools4.4) |
-| **M2070HE** | 1024 × 600 | 128 MB / 256 MB | 4.5 | [`M2070HE_DTools4.5`](M2070HE_DTools4.5) |
-| **M2100E** | 1024 × 600 | 128 MB / 256 MB | 4.4 | [`M2100E_DTools4.4`](M2100E_DTools4.4) |
-| **G100E2-WiFi-PR01** | 1024 × 600 | 256 MB / 256 MB | 4.4 | [`G100E2-WiFi-PR01_DTools4.4`](G100E2-WiFi-PR01_DTools4.4) |
-| **M2043HE** | 800 × 480 | 128 MB / 256 MB | 4.4 | [`M2043HE_DTools4.4`](M2043HE_DTools4.4) – Einstellungen auf zwei Seiten |
-| **M2043HE** | 800 × 480 | 128 MB / 256 MB | 4.5 | [`M2043HE_DTools4.5`](M2043HE_DTools4.5) – Einstellungen auf zwei Seiten |
-| **MK070E** | 800 × 480 | 64 MB / 128 MB | 4.4 | [`MK070E_DTools4.4`](MK070E_DTools4.4) – mit integrierter SPS |
-| **GL043E** | 480 × 272 | 128 MB / 128 MB | 4.4 | [`GL043E_DTools4.4`](GL043E_DTools4.4) – Einstellungen auf zwei Seiten |
-| **MK043E** | 480 × 272 | 64 MB / 128 MB | 4.4 | [`MK043E_DTools4.4`](MK043E_DTools4.4) – mit integrierter SPS, Einstellungen auf zwei Seiten |
-| **GT2156E** | 1920 × 1080 | 512 MB / 4 GB | 4.4 | [`GT2156E_DTools4.4`](GT2156E_DTools4.4) |
+| Gerät                | Auflösung   | RAM / Flash     | DTools | Ordner                                                                                       |
+| -------------------- | ----------- | --------------- | ------ | -------------------------------------------------------------------------------------------- |
+| **M2070HE**          | 1024 × 600  | 128 MB / 256 MB | 4.4    | [`M2070HE_DTools4.4`](M2070HE_DTools4.4)                                                     |
+| **M2070HE**          | 1024 × 600  | 128 MB / 256 MB | 4.5    | [`M2070HE_DTools4.5`](M2070HE_DTools4.5)                                                     |
+| **M2100E**           | 1024 × 600  | 128 MB / 256 MB | 4.4    | [`M2100E_DTools4.4`](M2100E_DTools4.4)                                                       |
+| **G100E2-WiFi-PR01** | 1024 × 600  | 256 MB / 256 MB | 4.4    | [`G100E2-WiFi-PR01_DTools4.4`](G100E2-WiFi-PR01_DTools4.4)                                   |
+| **M2043HE**          | 800 × 480   | 128 MB / 256 MB | 4.4    | [`M2043HE_DTools4.4`](M2043HE_DTools4.4) – Einstellungen auf zwei Seiten                     |
+| **M2043HE**          | 800 × 480   | 128 MB / 256 MB | 4.5    | [`M2043HE_DTools4.5`](M2043HE_DTools4.5) – Einstellungen auf zwei Seiten                     |
+| **MK070E**           | 800 × 480   | 64 MB / 128 MB  | 4.4    | [`MK070E_DTools4.4`](MK070E_DTools4.4) – mit integrierter SPS                                |
+| **GL043E**           | 480 × 272   | 128 MB / 128 MB | 4.4    | [`GL043E_DTools4.4`](GL043E_DTools4.4) – Einstellungen auf zwei Seiten                       |
+| **MK043E**           | 480 × 272   | 64 MB / 128 MB  | 4.4    | [`MK043E_DTools4.4`](MK043E_DTools4.4) – mit integrierter SPS, Einstellungen auf zwei Seiten |
+| **GT2156E**          | 1920 × 1080 | 512 MB / 4 GB   | 4.4    | [`GT2156E_DTools4.4`](GT2156E_DTools4.4)                                                     |
 
 Gestaltet ist alles für 1024 × 600. Auf anderen Displays ist die Oberfläche als Ganzes skaliert:
 
-| Auflösung | Bilder | Komponenten | Systemfenster |
-|---|---|---|---|
-| 1024 × 600 | 1 | L | 1 |
-| 800 × 480 (7 Zoll, MK070E) | 0,75 | M | 1 |
-| 800 × 480 (4,3 Zoll, M2043HE) | 0,83 | M | 1 |
-| 480 × 272 (4,3 Zoll, GL043E, MK043E) | 0,5 | S | 0,6 |
-| 1920 × 1080 | 1,75 | XL | 1,75 |
+| Auflösung                            | Bilder | Komponenten | Systemfenster |
+| ------------------------------------ | ------ | ----------- | ------------- |
+| 1024 × 600                           | 1      | L           | 1             |
+| 800 × 480 (7 Zoll, MK070E)           | 0,75   | M           | 1             |
+| 800 × 480 (4,3 Zoll, M2043HE)        | 0,83   | M           | 1             |
+| 480 × 272 (4,3 Zoll, GL043E, MK043E) | 0,5    | S           | 0,6           |
+| 1920 × 1080                          | 1,75   | XL          | 1,75          |
 
 Auf den 4,3-Zoll-Geräten GL043E, MK043E und M2043HE sind Tasten und Schrift so groß, dass man sie mit dem Finger
 gut trifft. Dafür stehen die Einstellungen dort auf zwei Seiten.
@@ -54,14 +54,14 @@ Danach öffnet es sich nicht mehr in 4.4.
 
 **Bild 10 „Einstellungen“**
 
-| Bereich | Funktion | Register |
-|---|---|---|
-| RAM | Belegung Projekt / System / frei, Variante passend zum Gerät | LW9136, LW9134 |
-| Flash | belegt / frei, Variante passend zum Gerät | LW9036 |
-| Helligkeit | − / Regler / +, Anzeige in % | LW9140 (0–32) |
-| Sprache | Deutsch / English, aktuelle Sprache | LW9130 |
-| Systemmeldung testen | Eingabe 0…100, darüber erscheint Systemmeldung 19 | LW8110 |
-| System | Systemmenü des HMI öffnen, mit Bestätigungsabfrage | LB9404 |
+| Bereich              | Funktion                                                     | Register       |
+| -------------------- | ------------------------------------------------------------ | -------------- |
+| RAM                  | Belegung Projekt / System / frei, Variante passend zum Gerät | LW9136, LW9134 |
+| Flash                | belegt / frei, Variante passend zum Gerät                    | LW9036         |
+| Helligkeit           | − / Regler / +, Anzeige in %                                 | LW9140 (0–32)  |
+| Sprache              | Deutsch / English, aktuelle Sprache                          | LW9130         |
+| Systemmeldung testen | Eingabe 0…100, darüber erscheint Systemmeldung 19            | LW8110         |
+| System               | Systemmenü des HMI öffnen, mit Bestätigungsabfrage           | LB9404         |
 
 RAM, Flash und Helligkeit stammen aus den
 [kostenlosen spstiger-Komponenten](https://github.com/spstiger/Kinco-HMI-DTools-free-spstiger-components)
@@ -75,14 +75,14 @@ spstiger-Design, alle Texte übersetzt.
 **Eigene Systemmeldungen (Bild 40)** – statt der kleinen Kinco-Meldung erscheint ein eigenes Fenster
 mittig auf dem Bildschirm, auf Deutsch oder Englisch:
 
-| Nr. | Meldung |
-|---|---|
-| 13 | Benutzer ist gesperrt. |
-| 19 | Wert außerhalb von Min/Max. |
-| 24 | Passwort falsch. |
-| 29 | Keine Berechtigung. |
-| 34 | Benutzername ungültig. |
-| 35 | Vorgang ausgeführt. |
+| Nr. | Meldung                     |
+| --- | --------------------------- |
+| 13  | Benutzer ist gesperrt.      |
+| 19  | Wert außerhalb von Min/Max. |
+| 24  | Passwort falsch.            |
+| 29  | Keine Berechtigung.         |
+| 34  | Benutzername ungültig.      |
+| 35  | Vorgang ausgeführt.         |
 
 Die Kinco-Box für diese Nummern ist über LB9245 und die Maske LW9296–LW9299 abgeschaltet, das Fenster
 hängt an den Anzeige-Bits LW9550 ff. Alle anderen Meldungen zeigt Kinco wie gewohnt.
