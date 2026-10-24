@@ -13,9 +13,11 @@ Deutsch/Englisch. Projekt öffnen, eigene Bilder ab Nummer 100 anlegen, loslegen
 | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | ![Einstellungsseite auf Englisch](docs/bilder/einstellungen_en.png) | ![Zifferntastatur im spstiger-Design](docs/bilder/tastatur_de.png) |
 
-So sieht es auf einem echten M2070HE aus, mit RAM- und Flash-Werten des Geräts:
+So sieht es auf einem echten M2070HE aus, mit RAM- und Flash-Werten des Geräts (Fotos entzerrt):
 
-![Einstellungsseite auf dem M2070HE](docs/bilder/geraet_einstellungen.jpg)
+| Startseite | Einstellungen |
+| --- | --- |
+| ![Startseite auf dem M2070HE](docs/bilder/geraet_start.jpg) | ![Einstellungsseite auf dem M2070HE](docs/bilder/geraet_einstellungen.jpg) |
 
 ## Projekte
 
