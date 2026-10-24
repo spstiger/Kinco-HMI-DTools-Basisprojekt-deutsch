@@ -1,0 +1,116 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Kinco DTools 4.4](https://img.shields.io/badge/IDE-Kinco_DTools_4.4-blue)](https://www.spstiger.de/moorl-dc-v2/85089e4d00614b9fb80f0dfebf415ee0/read?path=Kinco%20DTools/Kinco%20DTools%20V4.4.0.3_Build250508_250613.zip)
+
+# Kinco DTools Basisprojekt (deutsch)
+
+Kostenlose Vorlage für eure Kinco-HMI-Projekte: deutsche Oberfläche im spstiger-Design, größere
+Tastaturen und Systemfenster, eigene Systemmeldungen, Einstellseite und Sprachumschaltung
+Deutsch/Englisch. Projekt öffnen, eigene Bilder ab Nummer 100 anlegen, loslegen.
+
+![Startseite des Basisprojekts](docs/bilder/start_de.png)
+
+| Einstellungen (Englisch) | Zifferntastatur |
+|---|---|
+| ![Einstellungsseite auf Englisch](docs/bilder/einstellungen_en.png) | ![Zifferntastatur im spstiger-Design](docs/bilder/tastatur_de.png) |
+
+So sieht es auf einem echten M2070HE aus, mit RAM- und Flash-Werten des Geräts:
+
+![Einstellungsseite auf dem M2070HE](docs/bilder/geraet_einstellungen.jpg)
+
+## Projekte
+
+| Gerät | Auflösung | DTools | Ordner |
+|---|---|---|---|
+| **M2070HE** | 1024 × 600 | 4.4 | [`M2070HE_DTools4.4`](M2070HE_DTools4.4) |
+
+Weitere Geräte und DTools 4.5 folgen. Ein Projekt für 4.4 lässt sich auch in DTools 4.5 öffnen: DTools
+fragt, ob es konvertiert werden soll. Danach öffnet es sich nicht mehr in 4.4.
+
+## Was drin ist
+
+**Bild 0 „Start“** – Überblick über die Vorlage, Sprachumschaltung oben rechts, Taste „Einstellungen“.
+
+**Bild 10 „Einstellungen“**
+
+| Bereich | Funktion | Register |
+|---|---|---|
+| RAM | Belegung Projekt / System / frei (128 MB) | LW9136, LW9134 |
+| Flash | belegt / frei (256 MB) | LW9036 |
+| Helligkeit | − / Regler / +, Anzeige in % | LW9140 (0–32) |
+| Sprache | Deutsch / English, aktuelle Sprache | LW9130 |
+| Systemmeldung testen | Eingabe 0…100, darüber erscheint Systemmeldung 19 | LW8110 |
+| System | Systemmenü des HMI öffnen, mit Bestätigungsabfrage | LB9404 |
+
+RAM, Flash und Helligkeit stammen aus den
+[kostenlosen spstiger-Komponenten](https://github.com/spstiger/Kinco-HMI-DTools-free-spstiger-components).
+
+**Systemfenster** – Zifferntastatur, Hex- und Texttastatur (QWERTZ), Anmeldung mit Benutzerauswahl
+und Ebenen-PIN, Bestätigung, Passwort, Dateiliste, Durchreichen und Projekt-Import: größer, im
+spstiger-Design, alle Texte übersetzt.
+
+**Eigene Systemmeldungen (Bild 40)** – statt der kleinen Kinco-Meldung erscheint ein eigenes Fenster
+mittig auf dem Bildschirm, auf Deutsch oder Englisch:
+
+| Nr. | Meldung |
+|---|---|
+| 13 | Benutzer ist gesperrt. |
+| 19 | Wert außerhalb von Min/Max. |
+| 24 | Passwort falsch. |
+| 29 | Keine Berechtigung. |
+| 34 | Benutzername ungültig. |
+| 35 | Vorgang ausgeführt. |
+
+Die Kinco-Box für diese Nummern ist über LB9245 und die Maske LW9296–LW9299 abgeschaltet, das Fenster
+hängt an den Anzeige-Bits LW9550 ff. Alle anderen Meldungen zeigt Kinco wie gewohnt.
+
+## Sprachen
+
+Alle Texte stehen in der **Textbibliothek** von DTools (Sprache 1 = Deutsch, Sprache 2 = Englisch),
+umgeschaltet wird über **LW9130** (0 = Deutsch, 1 = Englisch). Für eine weitere Sprache in DTools die
+Anzahl der Sprachen erhöhen und in der Textbibliothek die neue Spalte ausfüllen. Tastenbeschriftungen
+wie Enter, CLR oder ABC sind in allen Sprachen gleich und bleiben feste Texte.
+
+## Vor dem Einsatz anpassen
+
+> **Passwörter ändern.** Das Projekt nutzt die Kinco-Werksvorgaben: Upload, Dekompilieren, die drei
+> Ebenen-Passwörter, Download, FTP sowie Bedienung/Überwachung **888888**, Passwortknoten **123456**.
+> Diese Werte sind öffentlich bekannt – vor dem Einsatz an einer Maschine in DTools eigene setzen
+> (HMI-Eigenschaften).
+
+- **SPS-Verbindung:** Im Projekt steht als Platzhalter eine Siemens S7-1200. Unter
+  Projektdaten eure SPS eintragen bzw. den Platzhalter löschen. Die Bilder der Vorlage nutzen nur
+  HMI-interne Register und funktionieren ohne SPS.
+- **Gerät:** Für ein anderes Kinco-HMI mit 1024 × 600 den HMI-Typ in DTools umstellen. Speicheranzeigen
+  passend zur RAM-/Flash-Größe des Geräts aus der Komponenten-Bibliothek neu einfügen.
+- **Eigene Bilder** ab Nummer 100 anlegen. 0 und 10 sind die Vorlage, 40 die Systemmeldung, 1–9,
+  32766 und 32767 die Systemfenster.
+- **Eigene Register** nicht ab LB/LW 8900 anlegen – dieser Bereich ist für Systemregister reserviert.
+  Die Vorlage selbst nutzt LW8110 (Testwert).
+
+## Projekt öffnen
+
+1. [Kinco DTools](https://www.spstiger.de/moorl-dc-v2/85089e4d00614b9fb80f0dfebf415ee0/read?path=Kinco%20DTools/Kinco%20DTools%20V4.4.0.3_Build250508_250613.zip)
+   ab Version 4.4 installieren.
+2. Dieses Repository als ZIP herunterladen oder klonen, z. B. mit GitHub Desktop.
+3. Die `.dpj`-Datei im Ordner des Geräts in DTools öffnen.
+4. Im Menü **Werkzeuge** kompilieren, dann **Offline-Simulation** oder **Download auf das HMI**.
+
+> Tipp: Vor jeder Offline-Simulation einmal kompilieren. Ohne frisches Kompilieren zeigt die Simulation
+> unter Umständen noch das zuletzt geöffnete Projekt.
+
+## Hinweise für Git
+
+- Schon beim Öffnen schreibt DTools die `.dpj` neu. Nur angesehen oder simuliert → Änderungen in
+  GitHub Desktop verwerfen. Bewusst geändert → alle geänderten Projektdateien zusammen committen.
+- Die `.gitignore` hält alles fern, was DTools selbst erzeugt (`temp/`, `tar/`, `.pkgx`, `.bak`,
+  `PLCGEDefaultProperties.xml` …).
+
+## Mehr zu Kinco-HMIs
+
+- [Kostenlose DTools-Komponenten von spstiger](https://github.com/spstiger/Kinco-HMI-DTools-free-spstiger-components)
+- [Projektvorlage für eigene Repositories](https://github.com/spstiger/KincoDToolsTemplate)
+- Kinco-HMIs, Software und Support: [spstiger.de](https://www.spstiger.de)
+
+## Lizenz
+
+[MIT](LICENSE) – frei nutzbar, auch in kommerziellen Projekten, ohne Gewähr.
