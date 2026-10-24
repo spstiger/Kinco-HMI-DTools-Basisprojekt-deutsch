@@ -30,10 +30,13 @@ So sieht es auf einem echten M2070HE aus, mit RAM- und Flash-Werten des Geräts:
 | **M2043HE**          | 800 × 480   | 128 MB / 256 MB | 4.4    | [`M2043HE_DTools4.4`](M2043HE_DTools4.4) – Einstellungen auf zwei Seiten                     |
 | **M2043HE**          | 800 × 480   | 128 MB / 256 MB | 4.5    | [`M2043HE_DTools4.5`](M2043HE_DTools4.5) – Einstellungen auf zwei Seiten                     |
 | **MK070E**           | 800 × 480   | 64 MB / 128 MB  | 4.4    | [`MK070E_DTools4.4`](MK070E_DTools4.4) – mit integrierter SPS                                |
-| **MK070E**           | 800 × 480   | 64 MB / 128 MB  | 4.5    | [`MK070E_DTools4.5`](MK070E_DTools4.5) – ohne SPS                                            |
+| **MK070E**           | 800 × 480   | 64 MB / 128 MB  | 4.5    | [`MK070E_DTools4.5`](MK070E_DTools4.5) – mit integrierter SPS                                |
 | **GL043E**           | 480 × 272   | 128 MB / 128 MB | 4.4    | [`GL043E_DTools4.4`](GL043E_DTools4.4) – Einstellungen auf zwei Seiten                       |
+| **GL043E**           | 480 × 272   | 128 MB / 128 MB | 4.5    | [`GL043E_DTools4.5`](GL043E_DTools4.5) – Einstellungen auf zwei Seiten                       |
 | **MK043E**           | 480 × 272   | 64 MB / 128 MB  | 4.4    | [`MK043E_DTools4.4`](MK043E_DTools4.4) – mit integrierter SPS, Einstellungen auf zwei Seiten |
+| **MK043E**           | 480 × 272   | 64 MB / 128 MB  | 4.5    | [`MK043E_DTools4.5`](MK043E_DTools4.5) – mit integrierter SPS, Einstellungen auf zwei Seiten |
 | **GT2156E**          | 1920 × 1080 | 512 MB / 4 GB   | 4.4    | [`GT2156E_DTools4.4`](GT2156E_DTools4.4)                                                     |
+| **GT2156E**          | 1920 × 1080 | 512 MB / 4 GB   | 4.5    | [`GT2156E_DTools4.5`](GT2156E_DTools4.5)                                                     |
 
 Gestaltet ist alles für 1024 × 600. Auf anderen Displays ist die Oberfläche als Ganzes skaliert:
 
@@ -105,8 +108,8 @@ wie Enter, CLR oder ABC sind in allen Sprachen gleich und bleiben feste Texte.
 > (HMI-Eigenschaften).
 
 - **SPS-Verbindung:** In den 4.4-Projekten für M2070HE, M2100E und G100E2 steht als Platzhalter eine
-  Siemens S7-1200. MK070E und MK043E sind mit ihrer integrierten SPS angelegt. GL043E, M2043HE, GT2156E
-  und alle 4.5-Projekte sind ohne SPS angelegt. Unter Projektdaten eure SPS eintragen bzw. den
+  Siemens S7-1200, ihre 4.5-Projekte sind ohne SPS angelegt. MK070E und MK043E sind in beiden Versionen
+  mit ihrer integrierten SPS angelegt, GL043E, M2043HE und GT2156E ohne SPS. Unter Projektdaten eure SPS eintragen bzw. den
   Platzhalter löschen. Die Bilder der Vorlage nutzen nur
   HMI-interne Register und funktionieren ohne SPS.
 - **Gerät:** Für ein anderes Kinco-HMI das Projekt mit derselben Auflösung nehmen und den HMI-Typ in
