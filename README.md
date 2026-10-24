@@ -26,9 +26,11 @@ So sieht es auf einem echten M2070HE aus, mit RAM- und Flash-Werten des Geräts:
 | **M2100E**           | 1024 × 600  | 128 MB / 256 MB | 4.4    | [`M2100E_DTools4.4`](M2100E_DTools4.4)                                                       |
 | **M2100E**           | 1024 × 600  | 128 MB / 256 MB | 4.5    | [`M2100E_DTools4.5`](M2100E_DTools4.5)                                                       |
 | **G100E2-WiFi-PR01** | 1024 × 600  | 256 MB / 256 MB | 4.4    | [`G100E2-WiFi-PR01_DTools4.4`](G100E2-WiFi-PR01_DTools4.4)                                   |
+| **G100E2-WiFi-PR01** | 1024 × 600  | 256 MB / 256 MB | 4.5    | [`G100E2-WiFi-PR01_DTools4.5`](G100E2-WiFi-PR01_DTools4.5)                                   |
 | **M2043HE**          | 800 × 480   | 128 MB / 256 MB | 4.4    | [`M2043HE_DTools4.4`](M2043HE_DTools4.4) – Einstellungen auf zwei Seiten                     |
 | **M2043HE**          | 800 × 480   | 128 MB / 256 MB | 4.5    | [`M2043HE_DTools4.5`](M2043HE_DTools4.5) – Einstellungen auf zwei Seiten                     |
 | **MK070E**           | 800 × 480   | 64 MB / 128 MB  | 4.4    | [`MK070E_DTools4.4`](MK070E_DTools4.4) – mit integrierter SPS                                |
+| **MK070E**           | 800 × 480   | 64 MB / 128 MB  | 4.5    | [`MK070E_DTools4.5`](MK070E_DTools4.5) – ohne SPS                                            |
 | **GL043E**           | 480 × 272   | 128 MB / 128 MB | 4.4    | [`GL043E_DTools4.4`](GL043E_DTools4.4) – Einstellungen auf zwei Seiten                       |
 | **MK043E**           | 480 × 272   | 64 MB / 128 MB  | 4.4    | [`MK043E_DTools4.4`](MK043E_DTools4.4) – mit integrierter SPS, Einstellungen auf zwei Seiten |
 | **GT2156E**          | 1920 × 1080 | 512 MB / 4 GB   | 4.4    | [`GT2156E_DTools4.4`](GT2156E_DTools4.4)                                                     |
