@@ -80,20 +80,28 @@ RAM, Flash und Helligkeit stammen aus den
 und Ebenen-PIN, Bestätigung, Passwort, Dateiliste, Durchreichen und Projekt-Import: größer, im
 spstiger-Design, alle Texte übersetzt.
 
-**Eigene Systemmeldungen (Bild 40)** – statt der kleinen Kinco-Meldung erscheint ein eigenes Fenster
-mittig auf dem Bildschirm, auf Deutsch oder Englisch:
+**Eigene Systemmeldungen (Bilder 40–49)** – statt der kleinen Kinco-Meldung erscheint ein eigenes
+Fenster, auf Deutsch oder Englisch. Meldungen zur Bedienung stehen mittig auf dem Bildschirm. Fehler der
+SPS-Verbindung stehen als schmale Leiste unter dem Seitenkopf: Sie bleiben, solange die SPS nicht
+antwortet, und verdecken weder die Bildmitte noch andere Meldungen.
 
-| Nr. | Meldung                     |
-| --- | --------------------------- |
-| 13  | Benutzer ist gesperrt.      |
-| 19  | Wert außerhalb von Min/Max. |
-| 24  | Passwort falsch.            |
-| 29  | Keine Berechtigung.         |
-| 34  | Benutzername ungültig.      |
-| 35  | Vorgang ausgeführt.         |
+| Bild | Nr. | Meldung                                    | Anzeige |
+| ---- | --- | ------------------------------------------ | ------- |
+| 40   | 2   | Keine Antwort von der SPS. Verbindung prüfen. | Leiste  |
+| 41   | 9   | Arbeitsspeicher (RAM) voll.                | mittig  |
+| 42   | 13  | Benutzer ist gesperrt.                     | mittig  |
+| 43   | 16  | SPS-Daten nicht bereit. Verbindung prüfen. | Leiste  |
+| 44   | 19  | Wert außerhalb von Min/Max.                | mittig  |
+| 45   | 23  | Ungültige Datei. Dateiname prüfen.         | mittig  |
+| 46   | 24  | Passwort falsch.                           | mittig  |
+| 47   | 29  | Keine Berechtigung.                        | mittig  |
+| 48   | 34  | Benutzername ungültig.                     | mittig  |
+| 49   | 35  | Vorgang ausgeführt.                        | mittig  |
 
-Die Kinco-Box für diese Nummern ist über LB9245 und die Maske LW9296–LW9299 abgeschaltet, das Fenster
-hängt an den Anzeige-Bits LW9550 ff. Alle anderen Meldungen zeigt Kinco wie gewohnt.
+Jede Meldung hat ihr eigenes Fenster. Kommen mehrere gleichzeitig, liegt die zuletzt aufgetretene oben,
+nichts überlagert sich. Die Kinco-Box für diese Nummern ist über LB9245 und die Maske LW9296–LW9299
+abgeschaltet, die Fenster hängen an den Anzeige-Bits LW9550 ff. Alle anderen Meldungen zeigt Kinco wie
+gewohnt.
 
 ## Sprachen
 
@@ -117,8 +125,8 @@ wie Enter, CLR oder ABC sind in allen Sprachen gleich und bleiben feste Texte.
 - **Gerät:** Für ein anderes Kinco-HMI das Projekt mit derselben Auflösung nehmen und den HMI-Typ in
   DTools umstellen. Speicheranzeigen passend zur RAM-/Flash-Größe des Geräts aus der
   Komponenten-Bibliothek neu einfügen.
-- **Eigene Bilder** ab Nummer 100 anlegen. 0 und 10 (GL043E, MK043E und M2043HE auch 11) sind die Vorlage, 40 die
-  Systemmeldung, 1–9, 32766 und 32767 die Systemfenster.
+- **Eigene Bilder** ab Nummer 100 anlegen. 0 und 10 (GL043E, MK043E und M2043HE auch 11) sind die Vorlage, 40–49 die
+  Systemmeldungen, 1–9, 32766 und 32767 die Systemfenster.
 - **Eigene Register** nicht ab LB/LW 8900 anlegen – dieser Bereich ist für Systemregister reserviert.
   Die Vorlage selbst nutzt LW8110 (Testwert).
 
