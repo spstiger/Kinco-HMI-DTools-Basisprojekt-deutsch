@@ -4,8 +4,9 @@
 # Kinco DTools Basisprojekt (deutsch)
 
 Kostenlose Vorlage für eure Kinco-HMI-Projekte: deutsche Oberfläche im spstiger-Design, größere
-Tastaturen und Systemfenster, eigene Systemmeldungen, Einstellseite und Sprachumschaltung
-Deutsch/Englisch. Projekt öffnen, eigene Bilder ab Nummer 100 anlegen, loslegen.
+Tastaturen und Systemfenster, eigene Systemmeldungen, Einstellseite, Netzwerkseite (IP, DHCP, DNS,
+beim G100E2 auch Fernwartung per VPN) und Sprachumschaltung Deutsch/Englisch. Projekt öffnen, eigene
+Bilder ab Nummer 100 anlegen, loslegen.
 
 ![Startseite des Basisprojekts](docs/bilder/start_de.png)
 
@@ -76,6 +77,23 @@ RAM, Flash und Helligkeit stammen aus den
 (ab Version 2.1). Bei GL043E, MK043E und M2043HE ist die Seite zweigeteilt: RAM, Flash und Helligkeit auf Bild 10
 „Einstellungen 1/2“, Sprache, Systemmeldung und System auf Bild 11 „Einstellungen 2/2“.
 
+**Bild 12 ff. „Netzwerk“** – erreichbar über „Netzwerk ›“ auf den Einstellungen. Jedes Thema ist eine Karte,
+zwei Karten je Seite (4,3 Zoll: eine). Unten auf jeder Seite „HMI neu starten“ mit Bestätigung – neue
+Netzwerkwerte gelten erst nach dem Neustart.
+
+| Karte              | Funktion                                                         | Register                                        |
+| ------------------ | ---------------------------------------------------------------- | ----------------------------------------------- |
+| Ethernet LAN0      | DHCP ein/aus, IP-Adresse, Subnetzmaske, Gateway                  | LW9614.4, LW10033–10030, LW10117–10114, LW10113–10110 |
+| Ethernet LAN1      | wie LAN0, nur G100E2 (zweiter Port)                              | LW9614.7, LW10237–10234, LW10245–10242, LW10241–10238 |
+| DNS-Server         | DNS 1 und 2, Vorauswahl Cloudflare, Google, Quad9, OpenDNS       | LW10226–10229, LW10230–10233                    |
+| Fernwartung (VPN)  | nur G100E2: VPN ein/aus, Server Europa/China, Status, virtuelle IP, Seriennummer | LW9614.F, LW9769, LW9768, LW9029–9026, LW9940 |
+
+Die Register der IP-Adresse beginnen beim ersten Oktett mit der höchsten Adresse (LW10033 = erstes Oktett),
+die DNS-Register mit der niedrigsten (LW10226 = erstes Oktett). Die Vorauswahl (Bild 19) wird über LB8590
+eingeblendet und schließt sich, sobald ein Anbieter gewählt ist. Ob die beiden Ports des G100E2 als Switch
+oder getrennt arbeiten, lässt sich nur im Systemmenü des HMI umstellen. Am G100E2 geprüft sind LAN0, DNS
+und die VPN-Anzeige; LAN1 und DHCP sind nach Handbuch umgesetzt.
+
 **Systemfenster** – Zifferntastatur, Hex- und Texttastatur (QWERTZ), Anmeldung mit Benutzerauswahl
 und Ebenen-PIN, Bestätigung, Passwort, Dateiliste, Durchreichen und Projekt-Import: größer, im
 spstiger-Design, alle Texte übersetzt.
@@ -125,10 +143,10 @@ wie Enter, CLR oder ABC sind in allen Sprachen gleich und bleiben feste Texte.
 - **Gerät:** Für ein anderes Kinco-HMI das Projekt mit derselben Auflösung nehmen und den HMI-Typ in
   DTools umstellen. Speicheranzeigen passend zur RAM-/Flash-Größe des Geräts aus der
   Komponenten-Bibliothek neu einfügen.
-- **Eigene Bilder** ab Nummer 100 anlegen. 0 und 10 (GL043E, MK043E und M2043HE auch 11) sind die Vorlage, 40–49 die
-  Systemmeldungen, 1–9, 32766 und 32767 die Systemfenster.
+- **Eigene Bilder** ab Nummer 100 anlegen. 0, 10–13 und 19 sind die Vorlage (Einstellungen, Netzwerk,
+  DNS-Vorauswahl), 40–49 die Systemmeldungen, 1–9, 32766 und 32767 die Systemfenster.
 - **Eigene Register** nicht ab LB/LW 8900 anlegen – dieser Bereich ist für Systemregister reserviert.
-  Die Vorlage selbst nutzt LW8110 (Testwert).
+  Die Vorlage selbst nutzt LW8110 (Testwert), LB8590 (DNS-Vorauswahl) und Hilfsadressen ab LB/LW 8000.
 
 ## Projekt öffnen
 
